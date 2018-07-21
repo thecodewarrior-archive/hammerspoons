@@ -35,7 +35,7 @@ end
 function obj:start()
     self.menuItem = hs.menubar.new()
     self.menuItem:setIcon(self.spoonPath .. "/menuicon.pdf")
-    self.menuItem:setMenu(self.menus)
+    self.menuItem:setMenu(function() return self.menus end)
 end
 
 --- CustomMenu:stop()
