@@ -1,0 +1,119 @@
+[
+  {
+    "Constant" : [
+
+    ],
+    "submodules" : [
+
+    ],
+    "Function" : [
+
+    ],
+    "Variable" : [
+
+    ],
+    "stripped_doc" : [
+
+    ],
+    "desc" : "UNKNOWN DESC",
+    "Deprecated" : [
+
+    ],
+    "type" : "Module",
+    "Constructor" : [
+
+    ],
+    "items" : [
+      {
+        "def" : "CustomMenu:start()",
+        "stripped_doc" : [
+          "(re)start CustomMenu"
+        ],
+        "doc" : "(re)start CustomMenu",
+        "parameters" : [
+
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "CustomMenu:start()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "name" : "start",
+        "desc" : "(re)start CustomMenu"
+      },
+      {
+        "def" : "CustomMenu:stop()",
+        "stripped_doc" : [
+          "(re)start CustomMenu"
+        ],
+        "doc" : "(re)start CustomMenu",
+        "parameters" : [
+
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "CustomMenu:stop()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "name" : "stop",
+        "desc" : "(re)start CustomMenu"
+      }
+    ],
+    "Method" : [
+      {
+        "def" : "CustomMenu:start()",
+        "stripped_doc" : [
+          "(re)start CustomMenu"
+        ],
+        "doc" : "(re)start CustomMenu",
+        "parameters" : [
+
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "CustomMenu:start()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "name" : "start",
+        "desc" : "(re)start CustomMenu"
+      },
+      {
+        "def" : "CustomMenu:stop()",
+        "stripped_doc" : [
+          "(re)start CustomMenu"
+        ],
+        "doc" : "(re)start CustomMenu",
+        "parameters" : [
+
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "CustomMenu:stop()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "name" : "stop",
+        "desc" : "(re)start CustomMenu"
+      }
+    ],
+    "Command" : [
+
+    ],
+    "Field" : [
+
+    ],
+    "doc" : "",
+    "name" : "CustomMenu"
+  }
+]

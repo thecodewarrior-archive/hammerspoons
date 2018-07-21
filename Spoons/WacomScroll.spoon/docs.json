@@ -1,0 +1,119 @@
+[
+  {
+    "Constant" : [
+
+    ],
+    "submodules" : [
+
+    ],
+    "Function" : [
+
+    ],
+    "Variable" : [
+
+    ],
+    "stripped_doc" : [
+
+    ],
+    "desc" : "UNKNOWN DESC",
+    "Deprecated" : [
+
+    ],
+    "type" : "Module",
+    "Constructor" : [
+
+    ],
+    "doc" : "",
+    "Field" : [
+
+    ],
+    "Command" : [
+
+    ],
+    "Method" : [
+      {
+        "doc" : "(re)start WacomScroll",
+        "def" : "WacomScroll:start()",
+        "parameters" : [
+
+        ],
+        "stripped_doc" : [
+          "(re)start WacomScroll"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "WacomScroll:start()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "desc" : "(re)start WacomScroll",
+        "name" : "start"
+      },
+      {
+        "doc" : "(re)start WacomScroll",
+        "def" : "WacomScroll:stop()",
+        "parameters" : [
+
+        ],
+        "stripped_doc" : [
+          "(re)start WacomScroll"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "WacomScroll:stop()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "desc" : "(re)start WacomScroll",
+        "name" : "stop"
+      }
+    ],
+    "items" : [
+      {
+        "doc" : "(re)start WacomScroll",
+        "def" : "WacomScroll:start()",
+        "parameters" : [
+
+        ],
+        "stripped_doc" : [
+          "(re)start WacomScroll"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "WacomScroll:start()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "desc" : "(re)start WacomScroll",
+        "name" : "start"
+      },
+      {
+        "doc" : "(re)start WacomScroll",
+        "def" : "WacomScroll:stop()",
+        "parameters" : [
+
+        ],
+        "stripped_doc" : [
+          "(re)start WacomScroll"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "WacomScroll:stop()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "desc" : "(re)start WacomScroll",
+        "name" : "stop"
+      }
+    ],
+    "name" : "WacomScroll"
+  }
+]
