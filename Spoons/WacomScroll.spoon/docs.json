@@ -15,31 +15,73 @@
     "stripped_doc" : [
 
     ],
-    "desc" : "UNKNOWN DESC",
     "Deprecated" : [
 
     ],
     "type" : "Module",
+    "desc" : "UNKNOWN DESC",
     "Constructor" : [
 
     ],
     "doc" : "",
-    "Field" : [
+    "items" : [
+      {
+        "name" : "start",
+        "stripped_doc" : [
+          "(re)start WacomScroll"
+        ],
+        "parameters" : [
 
+        ],
+        "doc" : "(re)start WacomScroll",
+        "notes" : [
+
+        ],
+        "signature" : "WacomScroll:start()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "desc" : "(re)start WacomScroll",
+        "def" : "WacomScroll:start()"
+      },
+      {
+        "name" : "stop",
+        "stripped_doc" : [
+          "(re)start WacomScroll"
+        ],
+        "parameters" : [
+
+        ],
+        "doc" : "(re)start WacomScroll",
+        "notes" : [
+
+        ],
+        "signature" : "WacomScroll:stop()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "desc" : "(re)start WacomScroll",
+        "def" : "WacomScroll:stop()"
+      }
     ],
     "Command" : [
 
     ],
+    "Field" : [
+
+    ],
     "Method" : [
       {
-        "doc" : "(re)start WacomScroll",
-        "def" : "WacomScroll:start()",
-        "parameters" : [
-
-        ],
+        "name" : "start",
         "stripped_doc" : [
           "(re)start WacomScroll"
         ],
+        "parameters" : [
+
+        ],
+        "doc" : "(re)start WacomScroll",
         "notes" : [
 
         ],
@@ -49,17 +91,17 @@
 
         ],
         "desc" : "(re)start WacomScroll",
-        "name" : "start"
+        "def" : "WacomScroll:start()"
       },
       {
-        "doc" : "(re)start WacomScroll",
-        "def" : "WacomScroll:stop()",
-        "parameters" : [
-
-        ],
+        "name" : "stop",
         "stripped_doc" : [
           "(re)start WacomScroll"
         ],
+        "parameters" : [
+
+        ],
+        "doc" : "(re)start WacomScroll",
         "notes" : [
 
         ],
@@ -69,49 +111,7 @@
 
         ],
         "desc" : "(re)start WacomScroll",
-        "name" : "stop"
-      }
-    ],
-    "items" : [
-      {
-        "doc" : "(re)start WacomScroll",
-        "def" : "WacomScroll:start()",
-        "parameters" : [
-
-        ],
-        "stripped_doc" : [
-          "(re)start WacomScroll"
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "WacomScroll:start()",
-        "type" : "Method",
-        "returns" : [
-
-        ],
-        "desc" : "(re)start WacomScroll",
-        "name" : "start"
-      },
-      {
-        "doc" : "(re)start WacomScroll",
-        "def" : "WacomScroll:stop()",
-        "parameters" : [
-
-        ],
-        "stripped_doc" : [
-          "(re)start WacomScroll"
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "WacomScroll:stop()",
-        "type" : "Method",
-        "returns" : [
-
-        ],
-        "desc" : "(re)start WacomScroll",
-        "name" : "stop"
+        "def" : "WacomScroll:stop()"
       }
     ],
     "name" : "WacomScroll"
