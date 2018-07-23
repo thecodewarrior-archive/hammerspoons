@@ -16,7 +16,6 @@ obj.author = "TheCodeWarrior <pierce@plasticcow.com.com>"
 obj.license = "MIT - https://opensource.org/licenses/MIT"
 
 obj.menus = {}
-obj.imgurClientID = nil
 
 function obj:init()
 end

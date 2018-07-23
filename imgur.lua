@@ -1,6 +1,6 @@
 local imgurClientID = "ea0ec39d48f4030"
 
-spoon.CustomMenu:add({title="Upload to Imgur", fn=function()
+return {title="Upload to Imgur", fn=function()
     local image = hs.pasteboard.readImage()
 
     if image then
@@ -24,6 +24,5 @@ spoon.CustomMenu:add({title="Upload to Imgur", fn=function()
             end
         end)
     end
-
-end})
-
+    
+end}

@@ -15,25 +15,23 @@
     "stripped_doc" : [
 
     ],
-    "desc" : "UNKNOWN DESC",
     "Deprecated" : [
 
     ],
     "type" : "Module",
+    "desc" : "UNKNOWN DESC",
     "Constructor" : [
 
     ],
     "doc" : "",
-    "Method" : [
+    "items" : [
       {
-        "doc" : "Add a menu item. Refer to http:\/\/www.hammerspoon.org\/docs\/hs.menubar.html#setIcon for info",
+        "desc" : "Add a menu item. Refer to http:\/\/www.hammerspoon.org\/docs\/hs.menubar.html#setIcon for info",
+        "def" : "CustomMenu:add(name, fn)",
         "stripped_doc" : [
           "Add a menu item. Refer to http:\/\/www.hammerspoon.org\/docs\/hs.menubar.html#setIcon for info"
         ],
-        "name" : "add",
-        "parameters" : [
-
-        ],
+        "doc" : "Add a menu item. Refer to http:\/\/www.hammerspoon.org\/docs\/hs.menubar.html#setIcon for info",
         "notes" : [
 
         ],
@@ -42,18 +40,18 @@
         "returns" : [
 
         ],
-        "def" : "CustomMenu:add(name, fn)",
-        "desc" : "Add a menu item. Refer to http:\/\/www.hammerspoon.org\/docs\/hs.menubar.html#setIcon for info"
+        "name" : "add",
+        "parameters" : [
+
+        ]
       },
       {
-        "doc" : "(re)start CustomMenu",
+        "desc" : "(re)start CustomMenu",
+        "def" : "CustomMenu:start()",
         "stripped_doc" : [
           "(re)start CustomMenu"
         ],
-        "name" : "start",
-        "parameters" : [
-
-        ],
+        "doc" : "(re)start CustomMenu",
         "notes" : [
 
         ],
@@ -62,18 +60,18 @@
         "returns" : [
 
         ],
-        "def" : "CustomMenu:start()",
-        "desc" : "(re)start CustomMenu"
+        "name" : "start",
+        "parameters" : [
+
+        ]
       },
       {
-        "doc" : "(re)start CustomMenu",
+        "desc" : "(re)start CustomMenu",
+        "def" : "CustomMenu:stop()",
         "stripped_doc" : [
           "(re)start CustomMenu"
         ],
-        "name" : "stop",
-        "parameters" : [
-
-        ],
+        "doc" : "(re)start CustomMenu",
         "notes" : [
 
         ],
@@ -82,23 +80,23 @@
         "returns" : [
 
         ],
-        "def" : "CustomMenu:stop()",
-        "desc" : "(re)start CustomMenu"
+        "name" : "stop",
+        "parameters" : [
+
+        ]
       }
     ],
     "Command" : [
 
     ],
-    "items" : [
+    "Method" : [
       {
-        "doc" : "Add a menu item. Refer to http:\/\/www.hammerspoon.org\/docs\/hs.menubar.html#setIcon for info",
+        "desc" : "Add a menu item. Refer to http:\/\/www.hammerspoon.org\/docs\/hs.menubar.html#setIcon for info",
+        "def" : "CustomMenu:add(name, fn)",
         "stripped_doc" : [
           "Add a menu item. Refer to http:\/\/www.hammerspoon.org\/docs\/hs.menubar.html#setIcon for info"
         ],
-        "name" : "add",
-        "parameters" : [
-
-        ],
+        "doc" : "Add a menu item. Refer to http:\/\/www.hammerspoon.org\/docs\/hs.menubar.html#setIcon for info",
         "notes" : [
 
         ],
@@ -107,18 +105,18 @@
         "returns" : [
 
         ],
-        "def" : "CustomMenu:add(name, fn)",
-        "desc" : "Add a menu item. Refer to http:\/\/www.hammerspoon.org\/docs\/hs.menubar.html#setIcon for info"
+        "name" : "add",
+        "parameters" : [
+
+        ]
       },
       {
-        "doc" : "(re)start CustomMenu",
+        "desc" : "(re)start CustomMenu",
+        "def" : "CustomMenu:start()",
         "stripped_doc" : [
           "(re)start CustomMenu"
         ],
-        "name" : "start",
-        "parameters" : [
-
-        ],
+        "doc" : "(re)start CustomMenu",
         "notes" : [
 
         ],
@@ -127,18 +125,18 @@
         "returns" : [
 
         ],
-        "def" : "CustomMenu:start()",
-        "desc" : "(re)start CustomMenu"
+        "name" : "start",
+        "parameters" : [
+
+        ]
       },
       {
-        "doc" : "(re)start CustomMenu",
+        "desc" : "(re)start CustomMenu",
+        "def" : "CustomMenu:stop()",
         "stripped_doc" : [
           "(re)start CustomMenu"
         ],
-        "name" : "stop",
-        "parameters" : [
-
-        ],
+        "doc" : "(re)start CustomMenu",
         "notes" : [
 
         ],
@@ -147,8 +145,10 @@
         "returns" : [
 
         ],
-        "def" : "CustomMenu:stop()",
-        "desc" : "(re)start CustomMenu"
+        "name" : "stop",
+        "parameters" : [
+
+        ]
       }
     ],
     "Field" : [

@@ -26,12 +26,10 @@
     "doc" : "",
     "items" : [
       {
-        "name" : "start",
+        "desc" : "(re)start WacomScroll",
+        "def" : "WacomScroll:start()",
         "stripped_doc" : [
           "(re)start WacomScroll"
-        ],
-        "parameters" : [
-
         ],
         "doc" : "(re)start WacomScroll",
         "notes" : [
@@ -42,16 +40,16 @@
         "returns" : [
 
         ],
-        "desc" : "(re)start WacomScroll",
-        "def" : "WacomScroll:start()"
-      },
-      {
-        "name" : "stop",
-        "stripped_doc" : [
-          "(re)start WacomScroll"
-        ],
+        "name" : "start",
         "parameters" : [
 
+        ]
+      },
+      {
+        "desc" : "(re)start WacomScroll",
+        "def" : "WacomScroll:stop()",
+        "stripped_doc" : [
+          "(re)start WacomScroll"
         ],
         "doc" : "(re)start WacomScroll",
         "notes" : [
@@ -62,24 +60,21 @@
         "returns" : [
 
         ],
-        "desc" : "(re)start WacomScroll",
-        "def" : "WacomScroll:stop()"
+        "name" : "stop",
+        "parameters" : [
+
+        ]
       }
     ],
     "Command" : [
 
     ],
-    "Field" : [
-
-    ],
     "Method" : [
       {
-        "name" : "start",
+        "desc" : "(re)start WacomScroll",
+        "def" : "WacomScroll:start()",
         "stripped_doc" : [
           "(re)start WacomScroll"
-        ],
-        "parameters" : [
-
         ],
         "doc" : "(re)start WacomScroll",
         "notes" : [
@@ -90,16 +85,16 @@
         "returns" : [
 
         ],
-        "desc" : "(re)start WacomScroll",
-        "def" : "WacomScroll:start()"
-      },
-      {
-        "name" : "stop",
-        "stripped_doc" : [
-          "(re)start WacomScroll"
-        ],
+        "name" : "start",
         "parameters" : [
 
+        ]
+      },
+      {
+        "desc" : "(re)start WacomScroll",
+        "def" : "WacomScroll:stop()",
+        "stripped_doc" : [
+          "(re)start WacomScroll"
         ],
         "doc" : "(re)start WacomScroll",
         "notes" : [
@@ -110,9 +105,14 @@
         "returns" : [
 
         ],
-        "desc" : "(re)start WacomScroll",
-        "def" : "WacomScroll:stop()"
+        "name" : "stop",
+        "parameters" : [
+
+        ]
       }
+    ],
+    "Field" : [
+
     ],
     "name" : "WacomScroll"
   }

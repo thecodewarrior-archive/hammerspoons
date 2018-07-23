@@ -1,4 +1,4 @@
-spoon.CustomMenu:add({title="Upload to Hastebin", fn=function()
+return {title="Upload to Hastebin", fn=function()
     local text = hs.pasteboard.readString()
 
     if text then
@@ -16,5 +16,4 @@ spoon.CustomMenu:add({title="Upload to Hastebin", fn=function()
         end)
     end
 
-end})
-
+end}

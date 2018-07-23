@@ -4,11 +4,13 @@ local function script_path()
 end
 local p = script_path()
 
-local killList = {}
+local killList = S['deathToAppsList'] or {}
 
 local function killApp(name, bundleID)
-    killList[bundleID] = true
-    local table = { title = name, checked=true }
+    if killList[bundleID] == nil then
+        killList[bundleID] = true
+    end
+    local table = { title = name, checked=killList[bundleID] }
     table.fn = function(mods, item)
         if killList[bundleID] then
             killList[bundleID] = false
@@ -17,6 +19,7 @@ local function killApp(name, bundleID)
             killList[bundleID] = true
             table.checked = true
         end
+        S['deathToAppsList'] = killList
     end
     return table
 end
@@ -27,8 +30,6 @@ local apps = {
 }
 
 local circleSlashImage = hs.image.imageFromPath(p .. '/circle-slash.png')
-
-spoon.CustomMenu:add({title="Kill On Launch", menu=apps})
 
 local watcher = hs.application.watcher.new(function(name, eventType, app)
     if eventType == hs.application.watcher.launching and killList[app:bundleID()] then
@@ -61,3 +62,4 @@ local watcher = hs.application.watcher.new(function(name, eventType, app)
 end)
 watcher:start()
 
+return {title="Kill On Launch", menu=apps}

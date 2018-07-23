@@ -20,6 +20,7 @@ obj.iconSize = 30
 obj.mouseButton = 2
 obj.scrollSpeed = 7
 obj.debugEnabled = false
+obj.enabled = true
 
 obj.cursorImage = nil
 obj.cursorImageX = nil
@@ -48,7 +49,7 @@ function obj:init()
     }, function(e)
         local button = e:getProperty(hs.eventtap.event.properties.mouseEventButtonNumber)
         if self.debugEnabled then print("button pressed: ", button) end
-        if button == self.mouseButton then
+        if self.enabled and button == self.mouseButton then
             self:startScrolling()
             return true, {}
         end
