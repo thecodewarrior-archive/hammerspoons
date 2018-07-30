@@ -34,7 +34,17 @@ end
 function obj:start()
     self.menuItem = hs.menubar.new()
     self.menuItem:setIcon(self.spoonPath .. "/menuicon.pdf")
-    self.menuItem:setMenu(function() return self.menus end)
+    self.menuItem:setMenu(function() 
+        local m = {}
+        for i, menu in ipairs(self.menus) do
+            if type(menu) == "function" then
+                table.insert(m, menu())
+            else
+                table.insert(m, menu)
+            end
+        end
+        return m
+    end)
 end
 
 --- CustomMenu:stop()

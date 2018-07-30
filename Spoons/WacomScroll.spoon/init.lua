@@ -21,6 +21,7 @@ obj.mouseButton = 2
 obj.scrollSpeed = 7
 obj.debugEnabled = false
 obj.enabled = true
+obj.exclusions = {}
 
 obj.cursorImage = nil
 obj.cursorImageX = nil
@@ -49,7 +50,7 @@ function obj:init()
     }, function(e)
         local button = e:getProperty(hs.eventtap.event.properties.mouseEventButtonNumber)
         if self.debugEnabled then print("button pressed: ", button) end
-        if self.enabled and button == self.mouseButton then
+        if self.enabled and button == self.mouseButton and not self.exclusions[self:applicationUnderMouse():bundleID()] then
             self:startScrolling()
             return true, {}
         end
@@ -161,6 +162,26 @@ function obj:updateScrolling()
             self.icon:setImage(self.cursorImage)
         end
     end
+end
+
+function obj:applicationUnderMouse()
+    -- Invoke `hs.application` because `hs.window.orderedWindows()` doesn't do it
+    -- and breaks itself
+    local _ = hs.application
+
+    local my_pos = hs.geometry.new(hs.mouse.getAbsolutePosition())
+    local my_screen = hs.mouse.getCurrentScreen()
+
+    local window = hs.fnutils.find(hs.window.orderedWindows(), function(w)
+        return my_screen == w:screen() and my_pos:inside(w:frame())
+    end)
+    local app
+    if window == nil then
+        app = hs.application.frontmostApplication()
+    else 
+        app = window:application()
+    end
+    return app
 end
 
 return obj
