@@ -4,6 +4,7 @@ hs.loadSpoon("CustomMenu")
 --spoon.WacomScroll.debugEnabled = true
 spoon.WacomScroll:start()
 
+require "popupMenu"
 local menu = spoon.CustomMenu
 
 menu:add(require "imgur")
@@ -32,3 +33,7 @@ menu:add(function()
     }}
 end)
 spoon.CustomMenu:start()
+
+hs.loadSpoon("EjectShortcut")
+local shortcuts = spoon.EjectShortcut
+shortcuts:start()

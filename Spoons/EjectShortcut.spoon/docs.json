@@ -1,0 +1,119 @@
+[
+  {
+    "Constant" : [
+
+    ],
+    "submodules" : [
+
+    ],
+    "Function" : [
+
+    ],
+    "Variable" : [
+
+    ],
+    "stripped_doc" : [
+
+    ],
+    "desc" : "UNKNOWN DESC",
+    "Deprecated" : [
+
+    ],
+    "type" : "Module",
+    "Constructor" : [
+
+    ],
+    "items" : [
+      {
+        "doc" : "(re)start EjectShortcut",
+        "stripped_doc" : [
+          "(re)start EjectShortcut"
+        ],
+        "desc" : "(re)start EjectShortcut",
+        "def" : "EjectShortcut:start()",
+        "notes" : [
+
+        ],
+        "signature" : "EjectShortcut:start()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "name" : "start",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "(re)start EjectShortcut",
+        "stripped_doc" : [
+          "(re)start EjectShortcut"
+        ],
+        "desc" : "(re)start EjectShortcut",
+        "def" : "EjectShortcut:stop()",
+        "notes" : [
+
+        ],
+        "signature" : "EjectShortcut:stop()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "name" : "stop",
+        "parameters" : [
+
+        ]
+      }
+    ],
+    "Method" : [
+      {
+        "doc" : "(re)start EjectShortcut",
+        "stripped_doc" : [
+          "(re)start EjectShortcut"
+        ],
+        "desc" : "(re)start EjectShortcut",
+        "def" : "EjectShortcut:start()",
+        "notes" : [
+
+        ],
+        "signature" : "EjectShortcut:start()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "name" : "start",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "(re)start EjectShortcut",
+        "stripped_doc" : [
+          "(re)start EjectShortcut"
+        ],
+        "desc" : "(re)start EjectShortcut",
+        "def" : "EjectShortcut:stop()",
+        "notes" : [
+
+        ],
+        "signature" : "EjectShortcut:stop()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "name" : "stop",
+        "parameters" : [
+
+        ]
+      }
+    ],
+    "Command" : [
+
+    ],
+    "Field" : [
+
+    ],
+    "doc" : "",
+    "name" : "EjectShortcut"
+  }
+]
