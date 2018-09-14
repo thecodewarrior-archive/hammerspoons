@@ -45,7 +45,7 @@ function obj:init()
                     subText = "Depth: " .. depth,
                     image = nil,
                     fire = function()
-                        self:upload()
+                        self:trim()
                     end
                 }
             }
@@ -54,6 +54,7 @@ function obj:init()
         return {}
     end
 end
+
 function obj:trim()
     local text = hs.pasteboard.readString()
 

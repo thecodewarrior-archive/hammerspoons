@@ -49,7 +49,7 @@ function obj:init()
         -- hs.eventtap.event.types.leftMouseDown
     }, function(e)
         local button = e:getProperty(hs.eventtap.event.properties.mouseEventButtonNumber)
-        print("button pressed: ", button)
+        -- print("button pressed: ", button)
         local excluded = self.exclusions[self:applicationUnderMouse():bundleID()]
         if excluded then
             print("Application " .. self:applicationUnderMouse():bundleID() .. " is on the exclusion list")
@@ -67,7 +67,7 @@ function obj:init()
         -- hs.eventtap.event.types.leftMouseUp
     }, function(e)
         local button = e:getProperty(hs.eventtap.event.properties.mouseEventButtonNumber)
-        print("button released: ", button)
+        -- print("button released: ", button)
         if button == self.mouseButton and self.currentStartPosition then
             print("Stopping scrolling")
             self:stopScrolling()
@@ -134,7 +134,7 @@ end
 
 function obj:updateScrolling()
     if self.currentStartPosition then
-        print("WacomScroll scroll update")
+        -- print("WacomScroll scroll update")
         local currentPos = hs.mouse.getAbsolutePosition()
         local offset = {
             x=self.currentStartPosition.x - currentPos.x,
@@ -142,12 +142,12 @@ function obj:updateScrolling()
         }
         local absOffset = {x=math.abs(offset.x), y=math.abs(offset.y)}
         if absOffset.x > 2*absOffset.y then
-            print("WacomScroll snapped to x axis")
+            -- print("WacomScroll snapped to x axis")
             offset.y = 0
             absOffset.y = 0
             self.icon:setImage(self.cursorImageX)
         elseif absOffset.y > 2*absOffset.x then
-            print("WacomScroll snapped to y axis")
+            -- print("WacomScroll snapped to y axis")
             offset.x = 0
             absOffset.x = 0
             self.icon:setImage(self.cursorImageY)
@@ -159,18 +159,18 @@ function obj:updateScrolling()
             -- self.icon:setImage(self.cursorImageXY)
         end
         if absOffset.x > self.iconSize/2 or absOffset.y > self.iconSize/2 then
-            print("WacomScroll threshold breached. scrolling")
+            -- print("WacomScroll threshold breached. scrolling")
             local scrollAmount = {
                 math.floor(offset.x/self.refreshRate * self.scrollSpeed + 0.5),
                 math.floor(offset.y/self.refreshRate * self.scrollSpeed + 0.5)
             }
-            print("x: " .. scrollAmount[1] .. " y: " .. scrollAmount[2])
+            -- print("x: " .. scrollAmount[1] .. " y: " .. scrollAmount[2])
             hs.mouse.setAbsolutePosition(self.currentStartPosition)
             local scroll = hs.eventtap.event.newScrollEvent(scrollAmount,{},'pixel')
             scroll:post()
             hs.mouse.setAbsolutePosition(currentPos)
         else
-            print("WacomScroll threshold not met. setting image to blank image")
+            -- print("WacomScroll threshold not met. setting image to blank image")
             self.icon:setImage(self.cursorImage)
         end
     end

@@ -15,73 +15,29 @@
     "stripped_doc" : [
 
     ],
+    "type" : "Module",
+    "desc" : "UNKNOWN DESC",
     "Deprecated" : [
 
     ],
-    "type" : "Module",
-    "desc" : "UNKNOWN DESC",
     "Constructor" : [
 
     ],
     "doc" : "",
-    "Method" : [
-      {
-        "doc" : "(re)start WacomScroll",
-        "stripped_doc" : [
-          "(re)start WacomScroll"
-        ],
-        "parameters" : [
+    "Field" : [
 
-        ],
-        "desc" : "(re)start WacomScroll",
-        "notes" : [
-
-        ],
-        "signature" : "WacomScroll:start()",
-        "type" : "Method",
-        "returns" : [
-
-        ],
-        "def" : "WacomScroll:start()",
-        "name" : "start"
-      },
-      {
-        "doc" : "(re)start WacomScroll",
-        "stripped_doc" : [
-          "(re)start WacomScroll"
-        ],
-        "parameters" : [
-
-        ],
-        "desc" : "(re)start WacomScroll",
-        "notes" : [
-
-        ],
-        "signature" : "WacomScroll:stop()",
-        "type" : "Method",
-        "returns" : [
-
-        ],
-        "def" : "WacomScroll:stop()",
-        "name" : "stop"
-      }
     ],
     "Command" : [
 
     ],
-    "Field" : [
-
-    ],
-    "items" : [
+    "Method" : [
       {
         "doc" : "(re)start WacomScroll",
+        "def" : "WacomScroll:start()",
+        "name" : "start",
         "stripped_doc" : [
           "(re)start WacomScroll"
         ],
-        "parameters" : [
-
-        ],
-        "desc" : "(re)start WacomScroll",
         "notes" : [
 
         ],
@@ -90,18 +46,18 @@
         "returns" : [
 
         ],
-        "def" : "WacomScroll:start()",
-        "name" : "start"
+        "desc" : "(re)start WacomScroll",
+        "parameters" : [
+
+        ]
       },
       {
         "doc" : "(re)start WacomScroll",
+        "def" : "WacomScroll:stop()",
+        "name" : "stop",
         "stripped_doc" : [
           "(re)start WacomScroll"
         ],
-        "parameters" : [
-
-        ],
-        "desc" : "(re)start WacomScroll",
         "notes" : [
 
         ],
@@ -110,8 +66,52 @@
         "returns" : [
 
         ],
+        "desc" : "(re)start WacomScroll",
+        "parameters" : [
+
+        ]
+      }
+    ],
+    "items" : [
+      {
+        "doc" : "(re)start WacomScroll",
+        "def" : "WacomScroll:start()",
+        "name" : "start",
+        "stripped_doc" : [
+          "(re)start WacomScroll"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "WacomScroll:start()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "desc" : "(re)start WacomScroll",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "(re)start WacomScroll",
         "def" : "WacomScroll:stop()",
-        "name" : "stop"
+        "name" : "stop",
+        "stripped_doc" : [
+          "(re)start WacomScroll"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "WacomScroll:stop()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "desc" : "(re)start WacomScroll",
+        "parameters" : [
+
+        ]
       }
     ],
     "name" : "WacomScroll"
