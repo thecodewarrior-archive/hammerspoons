@@ -85,6 +85,9 @@ function obj:calculateDepth(text)
             print("Line " .. n .. " was empty or entirely whitespace. Skipping.")
         end
     end
+    if depth == 1000000 then
+        return 0
+    end
     return depth
 end
 

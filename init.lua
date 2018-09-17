@@ -5,6 +5,7 @@ hs.loadSpoon("CustomMenu")
 local wacomScroll = spoon.WacomScroll
 local menu = spoon.CustomMenu
 
+_G.hyper = require "hyperkey"
 local popup = require "popupMenu"
 local imgur = require "imgur"
 local hastebin = require "hastebin"
@@ -40,6 +41,7 @@ menu:add(function()
     }}
 end)
 
+hyper:start()
 wacomScroll.enabled = S["middleMouseScrollEnabled"]
 wacomScroll.exclusions = S["middleMouseExclusions"] or {}
 wacomScroll:start()
