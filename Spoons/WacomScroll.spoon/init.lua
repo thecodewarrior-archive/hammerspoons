@@ -55,7 +55,7 @@ function obj:init()
             print("Application " .. self:applicationUnderMouse():bundleID() .. " is on the exclusion list")
         end
         if self.enabled and button == self.mouseButton and not excluded then
-            print("Starting scrolling")
+            -- print("Starting scrolling")
             self:startScrolling()
             return true, {}
         end
@@ -69,7 +69,7 @@ function obj:init()
         local button = e:getProperty(hs.eventtap.event.properties.mouseEventButtonNumber)
         -- print("button released: ", button)
         if button == self.mouseButton and self.currentStartPosition then
-            print("Stopping scrolling")
+            -- print("Stopping scrolling")
             self:stopScrolling()
             return true, {}
         end
@@ -110,7 +110,7 @@ function obj:stop()
 end
 
 function obj:clear()
-    print("Clearing WacomScroll icon and start position")
+    -- print("Clearing WacomScroll icon and start position")
     if self.icon then
         self.icon:delete()
         self.icon = nil
@@ -119,7 +119,7 @@ function obj:clear()
 end
 
 function obj:startScrolling()
-    print("Starting WacomScroll scrolling")
+    -- print("Starting WacomScroll scrolling")
     self:clear()
     local pos = hs.mouse.getAbsolutePosition()
     self.currentStartPosition = pos
@@ -128,7 +128,7 @@ function obj:startScrolling()
 end
 
 function obj:stopScrolling()
-    print("Stopping WacomScroll scrolling")
+    -- print("Stopping WacomScroll scrolling")
     obj:clear()
 end
 
@@ -177,7 +177,7 @@ function obj:updateScrolling()
 end
 
 function obj:applicationUnderMouse()
-    print("Getting app under mouse")
+    -- print("Getting app under mouse")
     -- Invoke `hs.application` because `hs.window.orderedWindows()` doesn't do it
     -- and breaks itself
     local _ = hs.application
@@ -185,16 +185,16 @@ function obj:applicationUnderMouse()
     local my_pos = hs.geometry.new(hs.mouse.getAbsolutePosition())
     local my_screen = hs.mouse.getCurrentScreen()
 
-    print("Got mouse pos and mouse screen")
+    -- print("Got mouse pos and mouse screen")
     local window = hs.fnutils.find(hs.window.orderedWindows(), function(w)
         return my_screen == w:screen() and my_pos:inside(w:frame())
     end)
     local app
     if window == nil then
-        print("No window under cursor")
+        -- print("No window under cursor")
         app = hs.application.frontmostApplication()
     else 
-        print("Got window under cursor")
+        -- print("Got window under cursor")
         app = window:application()
     end
     return app

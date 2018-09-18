@@ -40,14 +40,6 @@ function obj:start()
         end
         return choices
     end)
-
-    self.cmdTap = hs.eventtap.new({ hs.eventtap.event.types.keyDown }, function (event)
-        if hyper.shift and event:getKeyCode() == hs.keycodes.map.space then
-            print("opening popup menu")
-            self:openMenu()
-        end
-    end)
-    self.cmdTap:start()
 end
 
 return obj
