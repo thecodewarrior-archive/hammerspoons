@@ -29,12 +29,13 @@ obj.modifiers = {
     fn = false
 }
 
-obj.cmd   = false
 obj.ctrl  = false
 obj.shift = false
+obj.cmd   = false
 obj.alt   = false
 obj.fn    = false
 obj.shortcuts = {}
+obj.listeners = {}
 
 function obj:start()
     self.flagsChanged = hs.eventtap.new({ hs.eventtap.event.types.flagsChanged }, function (event)
@@ -53,6 +54,11 @@ function obj:start()
 
         flags = event:rawFlags()
 
+        old_hyperctrl = self.modifiers.hyperctrl
+        old_hypershift = self.modifiers.hypershift
+        old_hypercmd = self.modifiers.hypercmd
+        old_hyperalt = self.modifiers.hyperalt
+
         self.modifiers.hyperctrl  = self.modifiers.hyperctrl  or (flags & lCtrl  ~= 0 and flags & rCtrl  ~= 0)
         self.modifiers.hypershift = self.modifiers.hypershift or (flags & lShift ~= 0 and flags & rShift ~= 0)
         self.modifiers.hypercmd   = self.modifiers.hypercmd   or (flags & lCmd   ~= 0 and flags & rCmd   ~= 0)
@@ -63,6 +69,19 @@ function obj:start()
         self.cmd   = self.modifiers.hypercmd
         self.alt   = self.modifiers.hyperalt
         self.fn    = self.modifiers.fn
+
+        if old_hyperctrl ~= self.modifiers.hyperctrl then
+            self:fireListener("ctrl")
+        end
+        if old_hypershift ~= self.modifiers.hypershift then
+            self:fireListener("shift")
+        end
+        if old_hypercmd ~= self.modifiers.hypercmd then
+            self:fireListener("cmd")
+        end
+        if old_hyperalt ~= self.modifiers.hyperalt then
+            self:fireListener("alt")
+        end
 
         for i, shortcut in ipairs(self.shortcuts) do
             shortcut:modifiersChanged()
@@ -83,6 +102,24 @@ function obj:start()
         end
     end)
     self.keyUp:start()
+end
+
+function obj:fireListener(name)
+    for i, listener in ipairs(self.listeners) do
+        func = nil
+        if self.modifiers["hyper" .. name] then
+            func = listener["hyper" .. name .. "_down"]
+        else
+            func = listener["hyper" .. name .. "_up"]
+        end
+        if func then
+            func()
+        end
+    end
+end
+
+function obj:listen(listener) 
+    table.insert(self.listeners, listener)
 end
 
 -- shortcut is in the format { mods: <mod string>, key: <keycode>, pressedfn: <pressed>, releasedfn: <released>? }

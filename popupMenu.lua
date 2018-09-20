@@ -42,4 +42,12 @@ function obj:start()
     end)
 end
 
+hyper:addShortcut({
+    mods = { "hypershift" },
+    key = hs.keycodes.map.space,
+    pressedfn = function() 
+        popup:openMenu()
+    end
+})
+
 return obj
